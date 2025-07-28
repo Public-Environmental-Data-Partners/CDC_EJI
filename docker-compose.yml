@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  data-backend:
+    build:
+      context: ./data_server
+    container_name: fastapi-dataserver
+    expose:
+      - "8000"
+    restart: always
+
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    container_name: nginx-proxy
+    ports:
+      - "8080:8080"
+    depends_on:
+      - data-backend
+    restart: always

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en-us" class="cdc-theme-atsdr cdc-page-type--content">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/TemplatePackage/5.0/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/TemplatePackage/5.0/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/TemplatePackage/5.0/img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="/TemplatePackage/5.0/img/favicon/safari-pinned-tab.svg" color="#0056b3">
+    <meta name="msapplication-TileColor" content="#0056b3">
+    <meta name="theme-color" content="#0056b3">
+    <link rel="stylesheet prefetch" href="/TemplatePackage/5.0/css/app.min.css?_=21530" />
+    <link rel="stylesheet" media="print" href="/TemplatePackage/5.0/css/print.min.css?_=21530" />
+    <link rel="manifest" href="/TemplatePackage/5.0/json/manifest.json">
+
+    <script src="https://www.cdc.gov/JScript/metrics/topic_levels.js?_=25032"></script>
+    <script src="https://www.cdc.gov/JScript/metrics/adobe/launch/b36c1852e229/2c674008a127/launch-04da70ea688d.min.js?_=25032"></script>
+
+    <meta property="cdc:template_version" content="5.0" />
+
+    <title>EJI Explorer | Place and Health - Geospatial Research, Analysis, and Services Program (GRASP) | ATSDR</title>
+    <meta name="description" content="Explore the EJI interactive map" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="EJI Explorer" />
+    <meta property="og:url" content="https://www.atsdr.cdc.gov/place-health/php/eji/eji-explorer.html" />
+    <meta property="og:description" content="Explore the EJI interactive map" />
+    <meta property="fb:app_id" content="205691699516606" />
+    <meta property="og:site_name" content="Place and Health - Geospatial Research, Analysis, and Services Program (GRASP)" />
+    <meta property="og:author" content="CDC" />
+    <meta property="og:updated_time" content="2024-12-03T11:18:46-05:00" />
+    <meta property="article:author" content="CDC" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="EJI Explorer" />
+    <meta name="twitter:url" content="https://www.atsdr.cdc.gov/place-health/php/eji/eji-explorer.html" />
+    <meta name="twitter:description" content="Explore the EJI interactive map" />
+    <meta name="twitter:site" content="@CDCEnvironment" />
+    <meta name="twitter:creator" content="@CDCEnvironment" />
+    <meta name="robots" content="index, archive" />
+    <meta property="cdc:first_published" content="December 3, 2024" />
+    <meta property="cdc:last_updated" content="November 5, 2024" />
+    <meta property="cdc:last_reviewed" content="December 3, 2024" />
+    <meta property="cdc:content_source" content="" />
+    <meta property="cdc:maintained_by" content="" />
+    <meta property="cdc:content_id" content="775" />
+    <meta property="cdc:build" content="4737" />
+    <meta property="cdc:version" content="4.25.1" />
+    <meta property="cdc:page_type" content="cdc_dfe" />
+    <meta property="cdc:page_origin" content="dfe" />
+    <link rel="canonical" href="https://www.atsdr.cdc.gov/place-health/php/eji/eji-explorer.html" />
+    <meta property="cdc:wcms_build" content="4.25.1 - b.4737" />
+
+
+
+    <meta name="DC.date" content="2024-12-03T11:18:46Z" />
+    <meta name="cdc:last_published" content="2025-02-11T22:01:20Z" />
+    <meta property="cdc:dfe_version" content="0.3" />
+    <meta property="cdc:dfe_content_type" content="cdc_listing" />
+    <meta property="cdc:dfe_content_type_version" content="1.5.2" />
+</head>
+
+<body class="no-js cdc-post-type--cdc-dfe cdc-dfe-cdc_listing">
+    <div id="skipmenu">
+        <a class="usa-skipnav" href="#content">Skip directly to site content</a>
+        <a class="usa-skipnav" href="#cdc-search">Skip directly to search</a>
+    </div>
+
+
+    <div class="cdc-page-banner container noindex">
+        <div class="cdc-site-gov-notice noindex noprint" aria-label="Official website of the United States government">
+            <div class="cdc-page-offset">
+                <div class="cdc-site-gov-notice__header">
+                    <div>
+                        <img aria-hidden="true" class="usa-banner__header-flag" src="/TemplatePackage/5.0/img/uswds/us_flag_small.png" alt="U.S. flag" width="16" height="11">
+                        <span>An official website of the United States government</span>
+                    </div>
+                    <span>
+				<a data-bs-toggle="collapse" href="#gov-notice" role="button" aria-expanded="false" aria-controls="gov-notice">
+					Here's how you know
+					<span class="cdc-fa-angle-down" aria-hidden="true"></span>
+                    </a>
+                    </span>
+                </div>
+                <div class="collapse" id="gov-notice" aria-hidden="true">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <img src="/TemplatePackage/5.0/img/uswds/icon-dot-gov.svg" alt="" aria-hidden="true">
+                            <div>
+                                <b>Official websites use .gov</b>
+                                <p>A <b>.gov</b> website belongs to an official government organization in the United States.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <img src="/TemplatePackage/5.0/img/uswds/icon-https.svg" alt="" aria-hidden="true">
+                            <div>
+                                <strong>Secure .gov websites use HTTPS</strong>
+                                <p>A <strong>lock</strong> ( <i class="cdc-icon-lock-01" aria-hidden="true"></i> ) or <strong>https://</strong> means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-cdc-site-alert></div>
+        <script src="/TemplatePackage/5.0/js/modules/banner.js"></script>
+    </div>
+    <header class="container cdc-header noindex" role="banner">
+        <!-- logo, menu, search -->
+        <div class="cdc-header__desktop">
+            <div class="cdc-page-offset">
+                <div class="cdc-header__cdc-logo">
+                    <a href="https://www.atsdr.cdc.gov/">
+	<img src="/TemplatePackage/5.0/img/logo/atsdr.svg" alt="Agency for Toxic Substances and Disease Registry" />
+</a>
+                </div>
+                <div class="cdc-header__body">
+                    <div class="cdc-header__title">
+                        <a class="cdc-header__title-link" href="/place-health/index.html">
+					Place and Health - Geospatial Research, Analysis, and Services Program (GRASP)				</a>
+                    </div>
+                    <div class="cdc-header__components">
+                        <!-- Must Have At Least 3 Pages in Audience or Multiple Audience -->
+                        <div class="cdc-header__menu">
+                            <button class="btn btn-outline-white btn-arrow-down btn-fancy" id="megaButton">
+						Explore Topics					</button>
+                        </div>
+                        <form action="https://search.cdc.gov/search/" method="GET" class="cdc-header__search" role="search">
+                            <a href="#" id="cdc-search__toggle">Search</a>
+                            <div class="input-group cdc-header__search__group">
+                                <span class="cdc-header__search-icon cdc-fa-magnifying-glass" aria-hidden="true"></span>
+                                <input class="form-control" data-search-input autocomplete="off" type="search" name="query" id="cdc-search__input" maxlength="300" placeholder="">
+                                <button class="cdc-header__search-submit btn" type="submit" id="cdc-search__submit">Search</button>
+                            </div>
+                            <input type="hidden" name="sitelimit" value="atsdr.cdc.gov" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cdc-megamenu" role="navigation">
+
+            <div class="cdc-megamenu__cols cdc-page-offset" role="menu">
+                <div class="cdc-megamenu__col" data-audience="gen">
+                    <div class="cdc-megamenu__heading">
+                        <a role="menuitem" href="/place-health/index.html">
+							<span>For Everyone</span>
+															<span class="cdc-fa-regular cdc-fa-house"></span>
+													</a>
+                    </div>
+                    <div class="cdc-megamenu__links">
+                        <ul class="list-unstyled" role="menu">
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="414" href="/place-health/featuredstories/index.html">
+								Feature Stories							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="813" href="/place-health/exploregrasp/index.html">
+								Explore Our Work							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="840" href="/place-health/whats-new/index.html">
+								News &amp; Announcements							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="1301" href="/place-health/discover-grasp/index.html">
+								Vision &amp; Program							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="1812" href="/place-health/share/index.html">
+								Resources and Materials							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="/place-health/site.html#gen" class="cdc-megamenu-all">
+								View all							</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cdc-megamenu__col" data-audience="php">
+                    <div class="cdc-megamenu__heading">
+                        <a role="menuitem" href="/place-health/site.html#php">
+							<span>Public Health</span>
+															<span></span>
+													</a>
+                    </div>
+                    <div class="cdc-megamenu__links">
+                        <ul class="list-unstyled" role="menu">
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="2229" href="/place-health/php/communication-resources/index.html">
+								State &amp; Local Environmental Emergency Resource Center							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="2265" href="/place-health/php/collaborate/index.html">
+								Collaborate with GRASP							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="747" href="/place-health/php/svi/index.html">
+								Social Vulnerability Index							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="774" href="/place-health/php/eji/index.html">
+								Environmental Justice Index							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a class="truncate" data-post-id="1552" href="/place-health/php/hhi/index.html">
+								Heat &amp; Health Index							</a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="/place-health/site.html#php" class="cdc-megamenu-all">
+								View all							</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cdc-megamenu__footer">
+                <div class="col cdc-page-offset">
+                    <div class="cdc-megamenu-footer-item cdc-megamenu-footer-item--left">
+                    </div>
+                    <div class="cdc-megamenu-footer-item cdc-megamenu-footer-item--right">
+                        <a href="/place-health/site.html" class="btn btn-outline-blue site-index-link">
+						View All					</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="cdc-header-mobile">
+            <div class="cdc-header-mobile__top">
+                <a href="https://www.atsdr.cdc.gov/">
+	<img src="/TemplatePackage/5.0/img/logo/atsdr-alt.svg" class="cdc-logo-mobile" alt="Agency for Toxic Substances and Disease Registry" />
+</a>
+                <div class="cdc-header-mobile__buttons">
+                    <a href="#" class="search-link">
+				<i class="cdc-fa-regular cdc-fa-magnifying-glass"><span class="visually-hidden">search</span></i>
+				<i class="cdc-fa-regular cdc-fa-xmark"><span class="visually-hidden">close search</span></i>
+			</a>
+                    <div class="cdc-mobile-menu-search">
+                        <form action="https://search.cdc.gov/search/" method="GET" class="cdc-mobile-search" role="search">
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary btn--search cdc-mobile-search__button" type="button"><i class="cdc-fa-light cdc-fa-magnifying-glass"></i><span class="visually-hidden">search</span></button>
+                                <input class="form-control cdc-mobile-search__input" data-search-input type="search" name="query" maxlength="300" placeholder="Search" required="" tabindex="-1">
+                            </div>
+                            <input type="hidden" name="sitelimit" value="atsdr.cdc.gov" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cdc-header-mobile__title dropdown  ">
+                <a href="/place-health/index.html">Place and Health - Geospatial Research, Analysis, and Services Program (GRASP)</a>
+                <a href="#" id="mobileDropDownButton" class="nav-link dropdown-toggle" data-mobile-toggle="open" data-bs-toggle="dropdown" data-bs-offset="0,20">
+			Menu <i class="cdc-fa-angle-down"></i>
+		</a>
+
+                <div class="dropdown-menu cdc-mobile-menu" role="menu" aria-labelledby="mobileDropDownButton">
+                    <div class="cdc-mobile-menu-search">
+                        <form action="https://search.cdc.gov/search/" method="GET" class="cdc-mobile-search" role="search">
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary btn--search cdc-mobile-search__button" type="button"><i class="cdc-fa-light cdc-fa-magnifying-glass"></i><span class="visually-hidden">search</span></button>
+                                <input class="form-control cdc-mobile-search__input" data-search-input type="search" name="query" maxlength="300" placeholder="Search" required="" tabindex="-1">
+                            </div>
+                            <input type="hidden" name="sitelimit" value="atsdr.cdc.gov" />
+                        </form>
+                    </div>
+                    <div class="cdc-mobile-menu-body">
+                        <div class="cdc-mobile-audience accordion">
+                            <div class="accordion-item" data-audience="gen">
+                                <div class="accordion-header">
+                                    <button class="accordion-button" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#mobilemenu-gen">
+										<span class="accordion-button__text">
+											For Everyone										</span>
+									</button>
+                                </div>
+                                <div class="accordion-collpase collapse" id="mobilemenu-gen">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li class="truncate">
+                                                <a data-post-id="414" href="/place-health/featuredstories/index.html">
+														Feature Stories													</a>
+                                            </li>
+                                            <li class="truncate">
+                                                <a data-post-id="813" href="/place-health/exploregrasp/index.html">
+														Explore Our Work													</a>
+                                            </li>
+                                            <li class="truncate">
+                                                <a data-post-id="840" href="/place-health/whats-new/index.html">
+														News &amp; Announcements													</a>
+                                            </li>
+                                            <li class="truncate">
+                                                <a data-post-id="1301" href="/place-health/discover-grasp/index.html">
+														Vision &amp; Program													</a>
+                                            </li>
+                                            <li class="truncate">
+                                                <a data-post-id="1812" href="/place-health/share/index.html">
+														Resources and Materials													</a>
+                                            </li>
+                                            <li>
+                                                <span class="item-link item-link--all">
+													<a href="/place-health/site.html#gen">
+														View All													</a>
+												</span>
+                                                <span class="item-link item-link--home">
+													<a href="/place-health/index.html">
+														Home													</a>
+												</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-audience="php">
+                                <div class="accordion-header">
+                                    <button class="accordion-button" aria-expanded="false" type="button" data-bs-toggle="collapse" data-bs-target="#mobilemenu-php">
+										<span class="accordion-button__text">
+											Public Health										</span>
+									</button>
+                                </div>
+                                <div class="accordion-collpase collapse" id="mobilemenu-php">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li class="truncate">
+                                                <a data-post-id="2229" href="/place-health/php/communication-resources/index.html">
+														State &amp; Local Environmental Emergency Resource Center													</a>
+                                            </li>
+                                            <li class="truncate">
+                                                <a data-post-id="2265" href="/place-health/php/collaborate/index.html">
+														Collaborate with GRASP													</a>
+                                            </li>
+                                            <li class="truncate">
+                                                <a data-post-id="747" href="/place-health/php/svi/index.html">
+														Social Vulnerability Index													</a>
+                                            </li>
+                                            <li class="truncate">
+                                                <a data-post-id="774" href="/place-health/php/eji/index.html">
+														Environmental Justice Index													</a>
+                                            </li>
+                                            <li class="truncate">
+                                                <a data-post-id="1552" href="/place-health/php/hhi/index.html">
+														Heat &amp; Health Index													</a>
+                                            </li>
+                                            <li>
+                                                <span class="item-link item-link--all">
+													<a href="/place-health/site.html#php">
+														View All													</a>
+												</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cdc-mobile-menu-footer">
+                        <a href="/place-health/site.html">
+						<span>
+							View All						</span>
+						<span>Place and Health - Geospatial Research, Analysis, and Services Program (GRASP)</span>
+					</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cdc-header-mobile__faux-title" aria-hidden="true">&nbsp;</div>
+        </div>
+        <div class="cdc-mobile-navbar">
+            <div class="cdc-mobile-navbar__paging">
+            </div>
+            <div class="cdc-mobile-navbar__links" tabindex="-1">
+                <a data-post-id="2229" href="/place-health/php/communication-resources/index.html" tabindex="0">
+				State &amp; Local Environmental Emergency Resource Center			</a>
+                <a data-post-id="2265" href="/place-health/php/collaborate/index.html" tabindex="0">
+				Collaborate with GRASP			</a>
+                <a data-post-id="747" href="/place-health/php/svi/index.html" tabindex="0">
+				Social Vulnerability Index			</a>
+                <a data-post-id="774" href="/place-health/php/eji/index.html" tabindex="0">
+				Environmental Justice Index			</a>
+                <a data-post-id="1552" href="/place-health/php/hhi/index.html" tabindex="0">
+				Heat &amp; Health Index			</a>
+                <a class="view-all" href="/place-health/site.html">
+					View All				</a>
+            </div>
+        </div>
+    </header>
+    <main class="container cdc-main" role="main" aria-label="Main Content Area">
+
+        <section class="cdc-page-title-bar cdc-page-offset noindex">
+            <time class="cdc-page-title-bar__item cdc-page-title-bar__item--date" datetime="2024-12-03 05:00:00">
+			December 3, 2024		</time>
+        </section>
+        <div class="cdc-page-title cdc-page-offset syndicate">
+            <h1>EJI Explorer</h1>
+        </div>
+        <div id="content" class="cdc-page-content cdc-page-offset syndicate container">
+            <div class="cdc-dfe-body ">
+                <div class="cdc-dfe-body__top ">
+                </div>
+                <div class="cdc-dfe-body__center ">
+                    <div class="dfe-section" data-section="cdc_listing_intro">
+                        <a class="onThisPageAnchor" id="cdc_listing_intro-environmental-justice-index" name="Environmental%20Justice%20Index" title="Environmental Justice Index">
+                            <!-- -->
+                        </a>
+                        <h2 class="editor-block--title" id="heading-y_df6kp6nr">Environmental Justice Index</h2>
+                        <div class="dfe-block dfe-block--cdcmodule cdc_raw_html dfe-block--width-wide">
+                            <div class="dfe-block__inner">
+                                <div class="dfe-block dfe-block--cdcmodule cdc_raw_html">
+                                    <div class="map-links"><a href="#" id="mapFull">Show Full Screen</a><a href="#" id="mapSmall">Exit Full Screen</a></div>
+                                    <script src="https://eji.cdc.gov/map/explorer/wp-integrate.js"></script>
+                                    <link href="https://eji.cdc.gov/map/explorer/wp-integrate.css" rel="stylesheet">
+                                    <div id="ejiapplication">
+                                        <div id="generalPopoverContainer"></div>
+                                        <div id="modals"></div>
+                                        <div id="headerLinks"></div>
+                                        <div id="pageContent">
+                                            <div id="searchAndTabsWrapper"></div>
+                                            <div id="contentAndControlButtons">
+                                                <div id="mainContent">
+                                                    <div id="legendAndLayers"></div>
+                                                    <div id="visualContent" class="tab-content">
+                                                        <div class="fa-3x genLoader"></div>
+                                                        <div id="errorMessage"></div>
+                                                        <div id="ejiMap" class="bodyArea">
+                                                            <div id="pointsPopoverContainer"></div>
+                                                            <div id="searchPopoverContainer1"></div>
+                                                            <div id="searchPopoverContainer2"></div>
+                                                            <div id="boundaryPopoverContainer"></div>
+                                                        </div>
+                                                        <div id="tableData" class="bodyArea" tabindex="0">
+                                                            <table id="tableContent" class="table table-bordered table-striped"></table>
+                                                        </div>
+                                                        <div id="moreInfo" class="bodyArea"></div>
+                                                        <div id="dataDownload" class="bodyArea"></div>
+                                                        <div id="infoPanelButton" class="infoPanelArea"><i class="fa-solid fa-chevron-right"></i></div>
+                                                        <div id="mapReports" class="infoPanelArea mobileButtonContainer">
+                                                            <div id="mapReportsContainer">
+                                                                <div id="reportsFlashBackground"></div>
+                                                                <div id="infoPanelContent" class="infoPanelArea tractTableContent"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="mobileCensusTractInfo"></div>
+                                                        <div id="closerLookContainer" class="mobileButtonContainer genMobileContainer"></div>
+                                                        <div id="closerLookContentContainer" class="mobileButtonContainer genMobileContainer"></div>
+                                                        <div id="mobileShareContainer" class="mobileButtonContainer genMobileContainer"></div>
+                                                    </div>
+                                                </div>
+                                                <div id="mapControlButtons"></div>
+                                            </div>
+                                            <div id="highlights"></div>
+                                        </div>
+                                        <div id="mobileScrollDownContent"></div>
+                                        <div id="feedback"></div><a id="image-download" download="EnvironmentalJusticeIndexMap.png"></a></div>
+                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+                                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+                                    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css">
+                                    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+                                    <script src="https://cdn.jsdelivr.net/npm/elm-pep@1.0.6/dist/elm-pep.js"></script>
+                                    <script src="https://eji.cdc.gov/map/explorer/dynamic-embed.js?source=https://eji.cdc.gov/map/explorer/asset.json" src-dev="?source=https://grasp_internal_test.cdc.gov/eji/001_DEV/asset.json" src-qa="?source=https://grasp_internal_test.cdc.gov/eji/ticket/ticketId/asset.json"></script>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cdc-dfe-body__right page-right-rail">
+                </div>
+            </div>
+
+            <section class="container page-mobile-bar">
+                <time class="page-mobile-bar__item page-mobile-bar__item--date" datetime="2024-12-03 00:00:00">
+			December 3, 2024		</time>
+            </section>
+
+            <div class="page-content-sources noindex">
+
+                <div class="page-content-sources__header">
+                    <a data-action="summary" class="collapsed" href="#content-sources" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="content-sources" data-cs-toggle="">Sources</a>
+                    <a data-action="print" href="#print" class="d-none d-md-block" aria-label="print this page" onclick="window.print()">Print</a>
+                    <a data-action="share" href="#share" data-bs-toggle="dropdown" aria-label="share this page" aria-expanded="false">Share</a>
+                    <div class="dropdown-menu page-share-bar" data-popper-placement="bottom-start">
+                        <a href="#" class="page-share-facebook"><span class="cdc-icon-facebook"></span></a>
+                        <a href="#" class="page-share-linkedin"><span class="cdc-icon-linkedin"></span></a>
+                        <a href="#" class="page-share-twitter"><span class="cdc-icon-twitter"></span></a>
+                        <a href="#" class="page-share-syndication"><span class="cdc-icon-rss"></span></a>
+                    </div>
+                </div>
+
+                <div class="page-share-container">
+                    <div class="page-share-popup" id="page-share-popup" role="dialog">
+                        <a target="_blank" title="Share to Facebook" rel="noreferrer noopener" class="page-share-facebook metrics-share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.cdc.gov">
+				<span class="sr-only">Facebook</span>
+				<span class="cdc-icon-facebook-inverse"></span>
+			</a>
+                        <a target="_blank" title="Share to LinkedIn" rel="noreferrer noopener" class="page-share-linkedin metrics-share-linkedin" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.cdc.gov&amp;title=Living%20with%20High%20Blood%20Pressure">
+				<span class="sr-only">LinkedIn</span>
+				<span class="cdc-icon-linkedin-inverse"></span>
+			</a>
+                        <a target="_blank" title="Share to Twitter" rel="noreferrer noopener" class="page-share-twitter metrics-share-twitter" href="https://twitter.com/share?url=https%3A%2F%2Fwww.cdc.gov&amp;text=Living%20with%20High%20Blood%20Pressure">
+				<span class="sr-only">Twitter</span>
+				<span class="cdc-icon-twitter-inverse"></span>
+			</a>
+                        <a target="_blank" title="Embed this Page" rel="noreferrer noopener" class="page-share-syndication metrics-share-syndicate" href="https://tools.cdc.gov/medialibrary/index.aspx#/sharecontent/https://https://www.atsdr.cdc.gov/place-health/php/eji/eji-explorer.html">
+				<span class="sr-only">Syndicate</span>
+				<span class="fi cdc-icon-syndication-round"></span>
+			</a>
+                    </div>
+                </div>
+                <div id="content-sources" class="page-content-sources__body accordion-collapse collapse">
+
+                    <div class="callout callout-content-source" role="status">
+                        <div class="callout-heading">Content Source:</div>
+                        <a class="cdc-block-link" href="https://atsdr.cdc.gov">Agency for Toxic Substances and Disease Registry</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="site-footer container noindex">
+        <div class="row cdc-footer__inner">
+            <div class="col-lg-3 site-footer__heading
+			has-home-link		">
+                <h2>
+                    <a href="/place-health/index.html" class="cdc-footer__super-title" aria-label="Place and Health - Geospatial Research, Analysis, and Services Program (GRASP)">
+											<i class="cdc-icon cdc-fa-solid cdc-fa-house"></i>
+										<span>Place and Health - Geospatial Research, Analysis, and Services Program (GRASP)</span>
+					<i class="cdc-icon cdc-fa-light cdc-fa-angle-right"></i>
+				</a>
+                </h2>
+                <p class="cdc-footer__site-desc">Healthy people, thriving communities. Place matters. || GRASP provides expertise, data, and technology to advance work at the intersection of place and health.</p>
+                <a href="/place-health/site.html" class="cdc-footer__all btn-outline__half btn btn-outline-white btn-arrow">
+				View All			</a>
+            </div>
+            <div class="col-lg-8 offset-lg-1">
+                <div class="row site-footer__links">
+                    <div class="col-md-6">
+                        <!-- If Group Site is Enabled, Need at Least 2 Links -->
+                        <h3 class="site-footer__links__header">
+                            <a class="cdc-footer__super-link" href="/place-health/index.html#gen">
+									<span>For Everyone</span>
+									<span class="cdc-icon cdc-fa-light cdc-fa-angle-right"></span>
+								</a>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a data-post-id="414" href="/place-health/featuredstories/index.html">
+									Feature Stories								</a>
+                            </li>
+                            <li>
+                                <a data-post-id="813" href="/place-health/exploregrasp/index.html">
+									Explore Our Work								</a>
+                            </li>
+                            <li>
+                                <a data-post-id="840" href="/place-health/whats-new/index.html">
+									News &amp; Announcements								</a>
+                            </li>
+                            <li>
+                                <a data-post-id="1301" href="/place-health/discover-grasp/index.html">
+									Vision &amp; Program								</a>
+                            </li>
+                            <li>
+                                <a data-post-id="1812" href="/place-health/share/index.html">
+									Resources and Materials								</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="audience-column">
+                            <h3 class="site-footer__links__header">
+                                <a class="cdc-footer__super-link" href="/place-health/site.html#php">
+										<span>Public Health</span>
+										<span class="cdc-icon cdc-fa-light cdc-fa-angle-right"></span>
+									</a>
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a data-post-id="2229" href="/place-health/php/communication-resources/index.html">
+												State &amp; Local Environmental Emergency Resource Center											</a>
+                                </li>
+                                <li>
+                                    <a data-post-id="2265" href="/place-health/php/collaborate/index.html">
+												Collaborate with GRASP											</a>
+                                </li>
+                                <li>
+                                    <a data-post-id="747" href="/place-health/php/svi/index.html">
+												Social Vulnerability Index											</a>
+                                </li>
+                                <li>
+                                    <a href="/place-health/site.html#php" class="btn cdc-super-footer-link">
+												View All												<span class="cdc-icon cdc-fa-light cdc-fa-angle-right"></span>
+											</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row site-footer__emailupdates">
+                    <div class="col">
+                        <i class="cdc-fa-regular cdc-fa-envelope" role="img" aria-hidden="true"></i>
+                        <a href="https://tools.cdc.gov/campaignproxyservice/subscriptions.aspx#featured">Sign up for Email Updates</a>
+                        <i class="cdc-fa-light cdc-fa-angle-right" role="img" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="container cdc-footer noindex" role="contentinfo">
+
+        <section class="cdc-footer__desktop">
+            <nav class="cdc-footer__nav" id="cdc-footer-nav">
+                <div class="row cdc-footer__inner">
+                    <div class="col">
+                        <a id="contactUs-btn" class="cdc-footer__nav-link" data-bs-toggle="collapse" href="#contactUs" role="button" aria-expanded="false" aria-controls="contactUs">
+					Contact Us <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__subnav collapse" id="contactUs" data-bs-parent="#cdc-footer-nav" aria-labelledby="contactUs-btn" tabindex="-1">
+                            <div class="cdc-footer__subnav-inner">
+                                <a class="cdc-footer__nav-heading" href="https://www.atsdr.cdc.gov/contacts.html">Contact Us <span class="cdc-fa-angle-right"></span></a>
+                                <ul>
+                                    <li><a class="cdc-footer__subnav-link" href="tel:800-232-4636">Call 800-232-4636</a></li>
+                                    <li><a class="cdc-footer__subnav-link" href="https://www.atsdr.cdc.gov/contacts.html">Contact ATSDR</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a id="aboutCDC-btn" class="cdc-footer__nav-link" data-bs-toggle="collapse" href="#aboutCDC" role="button" aria-expanded="false" aria-controls="aboutCDC">
+					About ATSDR <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__subnav collapse" id="aboutCDC" data-bs-parent="#cdc-footer-nav" aria-labelledby="aboutCDC-btn" tabindex="-1">
+                            <div class="cdc-footer__subnav-inner">
+                                <a class="cdc-footer__nav-heading" href="https://www.atsdr.cdc.gov/about/">About ATSDR</a>
+                                <ul>
+                                    <li><a class="cdc-footer__subnav-link" href="https://jobs.cdc.gov/index.html">Careers &amp; Jobs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a id="policies-btn" class="cdc-footer__nav-link" data-bs-toggle="collapse" href="#policies" role="button" aria-expanded="false" aria-controls="policies">
+					Policies <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__subnav collapse" id="policies" data-bs-parent="#cdc-footer-nav" aria-labelledby="policies-btn" tabindex="-1">
+                            <div class="cdc-footer__subnav-inner">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <ul>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/accessibility.html">Accessibility</a></li>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/Other/disclaimer.html#exit-notification">External Links</a></li>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/privacy.html">Privacy</a></li>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/policies.html">Web Policies</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <ul>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/foia/">FOIA</a></li>
+                                            <li><a class="cdc-footer__subnav-link" href="https://oig.hhs.gov/">OIG</a></li>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/oeeowe/no-fear-act/">No Fear Act</a></li>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/nondiscrimination.html">Nondiscrimination</a></li>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">Vulnerability Disclosure Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a id="languages-btn" class="cdc-footer__nav-link" data-bs-toggle="collapse" href="#languages" role="button" aria-expanded="false" aria-controls="languages">
+					Languages <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__subnav collapse" id="languages" data-bs-parent="#cdc-footer-nav" aria-labelledby="languages-btn" tabindex="-1">
+                            <div class="cdc-footer__subnav-inner">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <p class="cdc-footer__nav-heading">Languages</p>
+                                        <ul>
+                                            <li><a class="cdc-footer__subnav-link" href="https://www.atsdr.cdc.gov/es/">Español</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <a href="https://www.cdc.gov/other/language-assistance.html" class="cdc-footer__nav-heading">Language Assistance</a>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <ul>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Spanish">Español</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Chinese">繁體中文</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Vietnamese">Tiếng Việt</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Korean">한국어</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <ul>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Tagalog">Tagalog</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Russian">Русский</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Arabic">العربية</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Haitian">Kreyòl Ayisyen</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <ul>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#French">Français</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Polish">Polski</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Portuguese">Português</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Italian">Italiano</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <ul>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#German">Deutsch</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Japanese">日本語</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#Farsi">فارسی</a></li>
+                                                    <li><a class="cdc-footer__subnav-link" href="https://www.cdc.gov/other/language-assistance.html#English">English</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a id="archive-btn" class="cdc-footer__nav-link" data-bs-toggle="collapse" href="#archive" role="button" aria-expanded="false" aria-controls="archive">
+					Archive <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__subnav collapse" id="archive" data-bs-parent="#cdc-footer-nav" aria-labelledby="archive-btn" tabindex="-1">
+                            <div class="cdc-footer__subnav-inner">
+                                <ul>
+                                    <li><a class="cdc-footer__subnav-link" href="https://archive.cdc.gov/">CDC Archive</a></li>
+                                    <li><a class="cdc-footer__subnav-link" href="https://stacks.cdc.gov/">Public Health Publications</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+
+        <section class="cdc-footer__mobile">
+            <nav class="cdc-footer__nav">
+                <div class="row cdc-footer__inner">
+                    <div class="col">
+                        <a class="cdc-footer__heading" data-bs-toggle="collapse" href="#mobile-footer-contactUs" role="button" aria-expanded="false" aria-controls="mobile-footer-contactUs">
+					Contact Us <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__group col offset-lg-1 collapse" id="mobile-footer-contactUs">
+                            <a href="https://www.atsdr.cdc.gov/contacts.html" class="cdc-footer__nav-heading">Contact Us</a> <span class="cdc-fa-angle-right"></span>
+                            <ul>
+                                <li><a href="tel:800-232-4636">Call 800-232-4636</a></li>
+                                <li><a href="https://www.atsdr.cdc.gov/contacts.html">Contact ATSDR</a></li>
+                            </ul>
+                        </div>
+
+                        <a class="cdc-footer__heading" data-bs-toggle="collapse" href="#mobile-footer-aboutCDC" role="button" aria-expanded="false" aria-controls="mobile-footer-aboutCDC">
+					About ATSDR <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__group col offset-lg-1 collapse" id="mobile-footer-aboutCDC">
+                            <ul>
+                                <li><a href="https://www.atsdr.cdc.gov/about/">About ATSDR</a></li>
+                                <li><a href="https://jobs.cdc.gov/index.html">Careers &amp; Jobs</a></li>
+                            </ul>
+                        </div>
+
+                        <a class="cdc-footer__heading" data-bs-toggle="collapse" href="#mobile-footer-policies" role="button" aria-expanded="false" aria-controls="mobile-footer-policies">
+					Policies <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__group col offset-lg-1 collapse" id="mobile-footer-policies" data-bs-parent="#cdc-footer-nav">
+                            <ul>
+                                <li><a href="https://www.cdc.gov/other/accessibility.html">Accessibility</a></li>
+                                <li><a href="https://www.cdc.gov/Other/disclaimer.html#exit-notification">External Links</a></li>
+                                <li><a href="https://www.atsdr.cdc.gov/privacy.html">Privacy</a></li>
+                                <li><a href="https://www.atsdr.cdc.gov/privacy.html">Web Policies</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="https://www.cdc.gov/foia/">FOIA</a></li>
+                                <li><a href="https://oig.hhs.gov/">OIG</a></li>
+                                <li><a href="https://www.cdc.gov/oeeowe/no-fear-act/">No Fear Act</a></li>
+                                <li><a href="https://www.cdc.gov/other/nondiscrimination.html">Nondiscrimination</a></li>
+                                <li><a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">Vulnerability Disclosure Policy</a></li>
+                            </ul>
+                        </div>
+
+                        <a class="cdc-footer__heading" data-bs-toggle="collapse" href="#mobile-footer-languages" role="button" aria-expanded="false" aria-controls="mobile-footer-languages">
+					Languages <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__group col offset-lg-1 collapse" id="mobile-footer-languages" data-bs-parent="#cdc-footer-nav">
+                            <p class="cdc-footer__nav-heading">Languages <span class="cdc-fa-angle-right"></span></p>
+                            <ul>
+                                <li><a href="https://www.atsdr.cdc.gov/es/">Español</a></li>
+                            </ul>
+                            <p class="cdc-footer__nav-heading">Language Assistance <span class="cdc-fa-angle-right"></span></p>
+                            <ul>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Spanish">Español</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Chinese">繁體中文</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Vietnamese">Tiếng Việt</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Korean">한국어</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Tagalog">Tagalog</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Russian">Русский</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Arabic">العربية</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Haitian">Kreyòl Ayisyen</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#French">Français</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Polish">Polski</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Portuguese">Português</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Italian">Italiano</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#German">Deutsch</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Japanese">日本語</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#Farsi">فارسی</a></li>
+                                <li><a href="https://www.cdc.gov/other/language-assistance.html#English">English</a></li>
+                            </ul>
+                        </div>
+
+                        <a class="cdc-footer__heading" data-bs-toggle="collapse" href="#mobile-footer-archive" role="button" aria-expanded="false" aria-controls="mobile-footer-archive">
+					Archive <span class="cdc-fa-angle-down"></span>
+				</a>
+                        <div class="cdc-footer__group col offset-lg-1 collapse" id="mobile-footer-archive">
+                            <ul>
+                                <li><a href="https://archive.cdc.gov/">CDC Archive</a></li>
+                                <li><a href="https://stacks.cdc.gov/">Public Health Publications</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <div class="cdc-footer__body">
+            <div class="row cdc-footer__inner">
+                <div class="col-lg-3 cdc-footer__body-logo">
+                    <a href="https://www.atsdr.cdc.gov/">
+				<img src="/TemplatePackage/5.0/img/logo/atsdr-text.svg" alt="Agency for Toxic Substances and Disease Registry" />
+			</a>
+                </div>
+                <div class="col-lg-7 cdc-footer__body-social">
+                    <div>
+                        <a href="https://www.facebook.com/CDC">
+					<i role="img" aria-label="facebook icon" class="cdc-icon-facebook"></i>
+				</a>
+                        <a href="https://twitter.com/CDCEnvironment">
+					<i role="img" aria-label="x icon" class="cdc-icon-twitter"></i>
+				</a>
+                        <a href="https://www.instagram.com/CDCgov">
+					<i role="img" aria-label="instagram icon" class="cdc-icon-instagram"></i>
+				</a>
+                        <a href="https://www.linkedin.com/company/centers-for-disease-control-and-prevention">
+					<i role="img" aria-label="linkedin icon" class="cdc-icon-linkedin"></i>
+				</a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/cdc">
+					<i role="img" aria-label="youtube icon" class="cdc-icon-youtube"></i>
+				</a>
+                        <a href="https://www.pinterest.com/cdcgov">
+					<i role="img" aria-label="pinterest icon" class="cdc-icon-pinterest"></i>
+				</a>
+                        <a href="https://www.snapchat.com/add/cdcgov">
+					<i role="img" aria-label="snapchat icon" class="cdc-icon-snapchat"></i>
+				</a>
+                        <a href="https://www.cdc.gov/rss">
+					<i role="img" aria-label="rss icon" class="cdc-icon-rss"></i>
+				</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cdc-footer__agency">
+            <div class="cdc-footer__inner">
+                <a href="https://hhs.gov">HHS.gov</a>
+                <a href="https://usa.gov">USA.gov</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- progress bar -->
+    <div class="cdc-page-progress-bar d-none noindex">
+        <div class="cdc-page-progress-bar__scrubber"></div>
+    </div>
+
+    <!-- to top button -->
+    <a href="#" class="cdc-page-to-top d-none noindex noprint" title="Go to top">
+        <div class="cdc-page-to-top__bar"><i class="cdc-fa-solid cdc-fa-arrow-up"></i></div>
+    </a>
+
+    <script src="/config/cdc_config.js"></script>
+    <script>
+        var CDC_POST = {
+            "id": "29_775",
+            "type": "cdc_dfe",
+            "context": "29-2",
+            "lang": "en",
+            "audience": "php",
+            "tax": {
+                "cdc_topics": ["72aacad4-ceb4-4fd6-858a-05bec5108978", "4581f00d-5b8c-49ce-a18f-dc10ebe3b9b1", "0a219307-1092-4a1b-b4e6-5ff84adc6f46", "03efc989-8ffb-46a4-93d0-34ece59676cb", "e7133a32-25ae-4563-b5c2-bdd1057bd685", "7ab87982-69d5-4a55-a314-a72ef9658e6a"],
+                "cdc_categories": ["a9a5dc06-779f-4131-88b7-fa68f806d201"],
+                "cdc_audiences": ["39e8fbbb-c0e3-4c3e-993e-6bb1af48ef94"],
+                "cdc_subaudiences": ["ad975981-6887-4a2c-8d33-e2933808262d", "89568645-e94a-4a15-bd89-c39135f11a64", "389be439-3608-45cc-be4c-d64758d64f68", "5f33b1e2-7477-4a66-83c0-2f19c5c74f38", "9ffc6174-5c61-435b-8fdf-b2403f249b2a", "1cf52cfe-ea70-4bb7-9942-33319bd2232c", "f4579a17-dfb6-42f3-aaf9-e26c6ba51cb1", "82ccd0f7-ad5f-4090-9cb8-a70c3ea554ea", "ab54ad1d-66ce-456d-ad5d-413a3cfc3fc2", "2b7e3903-4784-4f74-b1d0-4b5de789c3a2", "917e3529-2cbc-4d11-be6a-e65e66ce8aa2", "89a636df-f918-40ba-9ef0-2800a489c3e7", "8507229a-24ac-49fc-8888-7e6af593bfd8"]
+            }
+        };
+    </script>
+    <script src="/TemplatePackage/contrib/libs/bootstrap/5x/bootstrap.bundle.min.js?_=21530"></script>
+    <script src="/TemplatePackage/contrib/libs/jquery/latest/jquery.js?_=21530"></script>
+    <script src="/TemplatePackage/5.0/js/app.min.js?_=21530"></script>
+    <script src="/TemplatePackage/contrib/libs/cdc/c2r/c2r.js?_=21530" type="module"></script>
+
+
+    <script>
+        siteCatalyst.setChannel("ATSDR_GRASP Place and Health");
+        siteCatalyst.setLevel1("ATSDR");
+        siteCatalyst.setLevel2("OIA");
+        siteCatalyst.setLevel3("ATSDR_GRASP Place and Health");
+    </script>
+    <script>
+    </script>
+
+</body>
+
+</html>
