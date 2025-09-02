@@ -7,8 +7,14 @@ services:
     container_name: fastapi-dataserver
     expose:
       - "8000"
-    restart: always
-
+    restart: always  
+  pmtiles:
+    env_file: ".env"
+    image: ghcr.io/protomaps/go-pmtiles:main
+    container_name: pmtiles-server
+    command: serve . --bucket=${TILES_S3_URL} --port=8081 --cors="*"
+    expose:
+      - "8081"
   nginx:
     build:
       context: .
