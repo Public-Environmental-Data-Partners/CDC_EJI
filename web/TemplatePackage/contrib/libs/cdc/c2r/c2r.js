@@ -8,13 +8,13 @@ import {
         workerSrc: '/TemplatePackage/contrib/libs/c2pa/latest/c2pa.worker.min.js',
     });
 
-    const DEBUG = !!window.location ? .search ? .includes('cdcdebug');
+    const DEBUG = !!window.location?.search?.includes('cdcdebug');
 
     // expose as recallable method
     window.cdcc2paCheck = () => {
         Array.from(document.getElementsByTagName('img')).forEach(async (image) => {
             // skip images in page headers, footers, or non-indexed content, or images already checked
-            if (image ? .closest('header, footer, .noindex') || image.hasOwnProperty('c2pa') || !image.src) {
+            if (image?.closest('header, footer, .noindex') || image.hasOwnProperty('c2pa') || !image.src) {
                 return;
             }
             // skip SVGs
@@ -31,7 +31,7 @@ import {
                 DEBUG && console.error(`C2R: failed checking image:`, image, e);
                 return;
             }
-            const manifestFlat = JSON.stringify(manifestStore ? .activeManifest ? .assertions ? .data || {});
+            const manifestFlat = JSON.stringify(manifestStore?.activeManifest?.assertions?.data || {});
             const manifestCheck = manifestFlat.includes('cv.iptc.org/newscodes/digitalsourcetype/compositeWithTrainedAlgorithmicMedia') ||
                 manifestFlat.includes('cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia');
 

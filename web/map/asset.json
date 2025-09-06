@@ -7,7 +7,7 @@
 	{
 		"id": "proj_file_1",
 		"nodename": "script",
-		"src": "http://localhost:8080/map/bootstrap-select.min.js"
+		"src": "/map/bootstrap-select.min.js"
 	},
 	{
 		"id": "proj_file_2",
@@ -22,11 +22,11 @@
 	{
 		"id": "proj_file_4",
 		"nodename": "script",
-		"src": "http://localhost:8080/map/assets/index-C_MITMSn.js"
+		"src": "/map/assets/index-C_MITMSn.js"
 	},
 	{
 		"id": "proj_file_5",
 		"nodename": "link",
-		"href": "http://localhost:8080/map/assets/index-SVM2C6_U.css"
+		"href": "/map/assets/index-SVM2C6_U.css"
 	}
 ]

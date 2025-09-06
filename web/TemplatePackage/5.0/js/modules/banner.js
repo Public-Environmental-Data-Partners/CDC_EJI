@@ -7,11 +7,11 @@ if (!window.CDC2025BANNER) {
     window.CDC2025BANNER = true;
     document.addEventListener('DOMContentLoaded', () => {
 
-        const lang = String(document.documentElement ? .lang).includes('es') ? 'es' : 'en';
-        const tp = ('5.0' === document.querySelector('meta[property="cdc:template_version"]') ? .getAttribute('content')) ? 5 : 4;
+        const lang = String(document.documentElement?.lang).includes('es') ? 'es' : 'en';
+        const tp = ('5.0' === document.querySelector('meta[property="cdc:template_version"]')?.getAttribute('content')) ? 5 : 4;
 
         // <link rel="canonical" href="http://vvvlink.wcms/test/diseases/about/disease-condition-name-basics.html"/>
-        const url = String(document.querySelector('link[rel="canonical"]') ? .href || location.href).trim().toLowerCase().replace(/[\?\#].*$/, '');
+        const url = String(document.querySelector('link[rel="canonical"]')?.href || location.href).trim().toLowerCase().replace(/[\?\#].*$/, '');
         const path = url.replace(/^https?:\/\/[^\/]+/, '');
 
         // prep banner

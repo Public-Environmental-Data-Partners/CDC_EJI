@@ -6,8 +6,7 @@ from status import STATUS
 from fastapi.middleware.cors import CORSMiddleware
 
 origins = [
-    "http://localhost",
-    "http://localhost:8080",
+    "*"
 ]
 
 app = FastAPI()
