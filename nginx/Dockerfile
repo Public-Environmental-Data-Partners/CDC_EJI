@@ -4,4 +4,4 @@ FROM nginx:alpine
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # Copy static frontend files
-COPY web /usr/share/nginx/html
+COPY --chmod=755 web /usr/share/nginx/html

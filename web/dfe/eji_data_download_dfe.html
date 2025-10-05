@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://eji.cdc.gov/dfe/eji_data_download_dfe.html -->
+<html lang="en-us" class="theme-teal"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <title>EJI Data Download</title>
+  <link rel="stylesheet" href="/dfe/bootstrap.min.css">
+  <!--<link rel="stylesheet prefetch" href="https://www.cdc.gov/TemplatePackage/5.0/css/app.css">-->
+  <script type="module" crossorigin="" src="/dfe/app-de5b659f.js"></script>
+  <link rel="stylesheet" href="/dfe/eji_data_download_dfe-71bb386d.css">
+</head>
+
+<body>
+  <main id="eji-download-app">
+  <div class="container-fluid">
+    <div class="card mb-3  ">
+      <div class="card-header h4 bg-primary">Data Download</div>
+      <div class="card-body bg-white">
+   
+      <div class="row">
+        <div class="col-auto">
+          <div class="form-group">
+            <label for="yearSelect"><b>Year </b></label>
+            <select class="form-control" id="yearSelect" name="yearSelect">
+              <option value="2022">2022</option>
+              <option value="2024" selected="">2024</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="stateSelect"><b>Geography </b></label>
+            <select class="form-control w-auto" id="stateSelect"><option value="00" data-abbr="US">United States</option><option value="01" data-abbr="AL">Alabama</option><option value="04" data-abbr="AZ">Arizona</option><option value="05" data-abbr="AR">Arkansas</option><option value="06" data-abbr="CA">California</option><option value="08" data-abbr="CO">Colorado</option><option value="09" data-abbr="CT">Connecticut</option><option value="10" data-abbr="DE">Delaware</option><option value="11" data-abbr="DC">District of Columbia</option><option value="12" data-abbr="FL">Florida</option><option value="13" data-abbr="GA">Georgia</option><option value="16" data-abbr="ID">Idaho</option><option value="17" data-abbr="IL">Illinois</option><option value="18" data-abbr="IN">Indiana</option><option value="19" data-abbr="IA">Iowa</option><option value="20" data-abbr="KS">Kansas</option><option value="21" data-abbr="KY">Kentucky</option><option value="22" data-abbr="LA">Louisiana</option><option value="23" data-abbr="ME">Maine</option><option value="24" data-abbr="MD">Maryland</option><option value="25" data-abbr="MA">Massachusetts</option><option value="26" data-abbr="MI">Michigan</option><option value="27" data-abbr="MN">Minnesota</option><option value="28" data-abbr="MS">Mississippi</option><option value="29" data-abbr="MO">Missouri</option><option value="30" data-abbr="MT">Montana</option><option value="31" data-abbr="NE">Nebraska</option><option value="32" data-abbr="NV">Nevada</option><option value="33" data-abbr="NH">New Hampshire</option><option value="34" data-abbr="NJ">New Jersey</option><option value="35" data-abbr="NM">New Mexico</option><option value="36" data-abbr="NY">New York</option><option value="37" data-abbr="NC">North Carolina</option><option value="38" data-abbr="ND">North Dakota</option><option value="39" data-abbr="OH">Ohio</option><option value="40" data-abbr="OK">Oklahoma</option><option value="41" data-abbr="OR">Oregon</option><option value="42" data-abbr="PA">Pennsylvania</option><option value="44" data-abbr="RI">Rhode Island</option><option value="45" data-abbr="SC">South Carolina</option><option value="46" data-abbr="SD">South Dakota</option><option value="47" data-abbr="TN">Tennessee</option><option value="48" data-abbr="TX">Texas</option><option value="49" data-abbr="UT">Utah</option><option value="50" data-abbr="VT">Vermont</option><option value="51" data-abbr="VA">Virginia</option><option value="53" data-abbr="WA">Washington</option><option value="54" data-abbr="WV">West Virginia</option><option value="55" data-abbr="WI">Wisconsin</option><option value="56" data-abbr="WY">Wyoming</option></select>
+           
+          </div>
+          <p><em>Please note that while data can be downloaded at state or national geographies, rankings within both geographic levels of these data represent comparisons to all other census tracts in the nation. For example, an EJI ranking of 0.85 signifies that 85% of tracts in the nation likely experience less severe cumulative impacts from environmental burden than the tract of interest, and that 15% of tracts in the nation likely experience more severe cumulative impacts from environmental burden.</em></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+         
+          <fieldset class="form-group">
+            <legend class="control-label">File Type</legend>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="cb_geodb" type="radio" name="filetype" value="DBS" checked="">
+                <label class="form-check-label" for="cb_geodb">Geodatabase</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" id="cb_csv" type="radio" name="filetype" value="CSV">
+                <label class="form-check-label" for="cb_csv">CSV File</label>
+            </div>
+        </fieldset></div>
+          <!-- <div class="form-group">
+            <label for="filetype"><b>File Type </b></label>
+            <select class="form-control w-auto" id="filetype" title="File Type" name="filetype"><option value="shp">Geodatabase</option><option value="csv">CSV File</option></select>
+           
+          </div> -->
+         </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <button id="go" type="submit" title="go">Go</button>
+        </div>
+        </div>
+      </div>
+    </div>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+          <p><em>Suggested citation for use of the database:</em><br> Centers for Disease Control and Prevention and Agency for Toxic Substances Disease Registry. [Year] Environmental Justice Index. Accessed [Insert Date]. https://atsdr.cdc.gov/place-health/php/eji/eji-data-download.html</p>
+          </div>
+        </div>
+     <div class="row">
+      <div class="col">
+        <h6>EJI County Maps</h6>
+       <p>Explore environmental injustice in your county with the <a href="https://wcms-wp-atsdr.cdc.gov/place-health/php/eji/eji-explorer.html?tab=moreInfo" target="_blank">EJI County Map Series</a>. These comprehensive maps provide valuable insights and visualizations, revealing the underlying patterns and causes of environmental injustice within the most burdened communities of each county.</p>
+      </div>
+    </div>
+</div>
+</main> 
+
+  
+
+
+
+</body></html>

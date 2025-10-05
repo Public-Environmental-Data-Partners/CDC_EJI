@@ -44317,7 +44317,7 @@ ${ke("subsidizedPublicHousing","Subsidized Public Housing",!0)}
   }), $("#dataDownload").html(`
 		<iframe
 			data-html2canvas-ignore
-			src="https://eji.cdc.gov/dfe/eji_data_download_dfe.html"
+			src="/dfe/eji_data_download_dfe.html"
 			title="data download frame from eji.cdc.gov"
 			width="100%"
 			height="100%"
