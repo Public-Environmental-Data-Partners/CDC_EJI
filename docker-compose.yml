@@ -21,7 +21,7 @@ services:
       dockerfile: nginx/Dockerfile
     container_name: nginx-proxy
     ports:
-      - "8080:8080"
+      - "${PORT}:8080"
     depends_on:
       - data-backend
     restart: always
