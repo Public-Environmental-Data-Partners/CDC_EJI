@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   data-backend:
+    env_file: ".env"
     build:
       context: ./data_server
     container_name: fastapi-dataserver

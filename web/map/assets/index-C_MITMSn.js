@@ -41287,7 +41287,7 @@ const Zh = (n, e) => {
   };
 let He, Ye, Do;
 const X_ = ",Primary Postal,City,Subregion,Region",
-  Y_ = () => `https://onemap.cdc.gov/OneMapServices/rest/services/Geocode/NorthAmerica/GeocodeServer/findAddressCandidates?outSR=3857&outFields=Type,Addr_type&f=json&token=${w.token}&magicKey=`,
+  Y_ = () => `/api/findAddressCandidates?magicKey=`,
   Ty = document.getElementById("searchPopoverContainer1"),
   Ly = new ZA({
     element: Ty,
@@ -41301,7 +41301,7 @@ const X_ = ",Primary Postal,City,Subregion,Region",
   Il = () => {
     Do && (Do.dispose(), Do = void 0)
   },
-  Uy = (n, e) => `https://onemap.cdc.gov/OneMapServices/rest/services/Geocode/NorthAmerica/GeocodeServer/suggest?f=json&countryCode=USA&category=Address${e!=="address"?X_:""}&maxSuggestions=10&token=${w.token}&text=${n}`,
+  Uy = (n, e) => `/api/suggest?address=${e!=="address"?X_:""}&text=${n}`,
   _g = n => {
     w.showSearchResults && (n.value.length < 2 || fetch(Uy(n.value, n.dataset.type)).then(e => {
       e.ok && e.json().then(t => {
@@ -43225,7 +43225,7 @@ class Sb {
 }
 const Pg = n => fetch(n).then(e => e.json().then(t => w.token = t.access_token).catch(t => console.log("Error refreshing token", t))).catch(e => console.log("Error refreshing token", e)),
   Tb = () => {
-    const n = `${w.apiUrl}/Search`;
+    const n = `/api/Search`;
     Pg(n), setInterval(Pg(n), 1e3 * 60 * 60 * 2), w.map.addOverlay(Ly), w.map.addOverlay(q_), w.map.on("movestart", () => {
       Il(), Tl(), ls()
     }), $(document).off("click", ".searchInput input").on("click", ".searchInput input", e => {
