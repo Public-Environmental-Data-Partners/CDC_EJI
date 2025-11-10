@@ -41960,7 +41960,7 @@ const Md = [{
 		</div>    
 	</div>
 `,
-  Qy = "https://eji.cdc.gov/documents/data/2024/countymaps/";
+  Qy = "https://raw.githubusercontent.com/environmental-report-archive/";
 let Sg = "";
 const ub = n => {
   const t = pC.filter(i => i.state === n)[0].counties.map(i => `<option value="${i.value}">${i.text}</option>`).join("");
@@ -41977,7 +41977,7 @@ const cb = n => {
       const A = t.target.options[i],
         o = A.text.trim().replaceAll(" ", "_").replaceAll(".", ""),
         s = A.value;
-      r && (Sg = `${Qy}${Tg}${s}_${o}_${ya.replaceAll(" ","_")}.pdf`, $("#getCountyMapPdfLink").prop("disabled", !1))
+      r && (Sg = `${Qy}CDC_EIJ_DATA_${Tg}/refs/heads/main/${s}_${o}_${ya.replaceAll(" ","_")}.pdf`, $("#getCountyMapPdfLink").prop("disabled", !1))
     }), $(document).on("click", "#getCountyMapPdfLink", () => {
       const t = window.open(`${Sg}`, "_blank", "noopener,noreferrer");
       t && (t.opener = null)
@@ -42390,7 +42390,7 @@ const hb = n => {
           <div class="html2canvas-ignore">
             <a id="downloadCountyMapFromInfoPanel"
             	class="btn btn-sm infoPanelButton"
-              	href="${Qy}${a}_${u.replaceAll(" ","_")}/${a}${s}_${l.replaceAll(" ","_").replaceAll(".","").replace("Planning_Region","PR")}_${u.replaceAll(" ","_")}.pdf"
+              	href="${Qy}CDC_EIJ_DATA_${a}_${u.replaceAll(" ","_")}/refs/heads/main/${a}${s}_${l.replaceAll(" ","_").replaceAll(".","").replace("Planning_Region","PR")}_${u.replaceAll(" ","_")}.pdf"
               	target="_blank">
                 	<i class="fa-solid fa-download"></i> Download County Map (PDF)
             </a>
